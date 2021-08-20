@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>
+            Registration form
+        </title>
+        <style>
+            input[type=text],[type=password]{
+                width:60%;
+                height:40px;
+                padding:20px;
+                font-size:18px;
+ 
+            }
+            div{
+                text-align:center;
+                padding-top:70px;
+                background-color:darkslategray;
+                width:500px;
+                height:525px;
+                margin-left:500px;
+                margin-top:120px;
+                opacity:.7;
+                color:white;
+                border-radius:62px;
+            
+            }
+            input[type="button"],[type="submit"]{
+                width:20%;
+                height:40px;
+                background-color:green;
+                color:aliceblue;
+                cursor:pointer;
+              
+            }
+            body{
+                background-image:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExMjU4fQ&w=1000&q=80");
+                background-size:cover;
+             
+            }
+            #loginform{
+                display:none;
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+        <div id="regform">
+            <h1 style="text-align:center">SignUp</h1><br><br>
+        <form action="aaa" method="POST"> 
+            <input type="text" id="username" placeholder="user_name" name="name" required><br><br><br><br>
+        <input type="password" id="pass" placeholder="password" name="pass" maxlength="8" required><br><br><br>
+        <input type="password" id="pass" placeholder="confirm password" name="pass" maxlength="8" required><br><br><br>
+        <input type="submit"   value="Sign Up"  ><br>
+       <p>Already have an Account? </p>
+        <input type="button" value="Sign In" id="haveaccount" onclick="myfunction ()" >
+        </form>
+        </div>
+ 
+ 
+ 
+        <div id="loginform">
+            <form action="bbb" method="POST">
+                <h1 style="text-align:center">SignIn</h1><br><br>
+                <input type="text" id="username1" placeholder="user name" name="loginuser" required><br><br><br><br>
+                <input type="password" id="pass1" placeholder="password" name="loginpass" maxlength="8" required><br><br><br>
+                <p>Forget Password?</p>
+                <input type="submit" value="submit">
+               </form>
+        </div>
+       
+    </body>
+ 
+    <script>
+      function myfunction(){
+        document.getElementById("regform").style.display="none";
+        document.getElementById("loginform").style.display="block";
+    
+      }
+    </script>
+</html>
